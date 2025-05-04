@@ -46,8 +46,6 @@ elif option == "Multiple Images (Folder)":
             img_array = preprocess_image(img)
             preds = model.predict(img_array)
             pred_class = le.inverse_transform([np.argmax(preds)])[0]
-<<<<<<< HEAD
             st.write(f"**{uploaded_file.name}**: Predicted disease: {pred_class}")
-=======
-            st.write(f"**{uploaded_file.name}**: Predicted disease: {pred_class}")
->>>>>>> 0c67d7852593b70e7be0bf7a928dec59c2d44a99
+
+   
