@@ -8,7 +8,7 @@ from PIL import Image
 # Load model and label encoder once (cache for performance)
 @st.cache_resource
 def load_model_and_encoder():
-    model = load_model('best_skin_model.h5')
+    model = load_model('best_skin_model.h5', compile=False)
     with open('label_encoder.pkl', 'rb') as f:
         le = pickle.load(f)
     return model, le
