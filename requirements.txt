@@ -1,6 +1,5 @@
 tensorflow==2.19.0
 streamlit==1.22.0
-protobuf==3.19.6
 numpy
 pillow
 scikit-learn
